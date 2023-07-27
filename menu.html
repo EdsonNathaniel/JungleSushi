@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Menu</title>
+	<link rel="stylesheet" type="text/css" href="stylee.css">
+</head>
+<body>
+	<header>
+		<a href="" class="logo"><img src="images/LOGO.jpg" width="105px" height="75px"></a>
+		<nav class="navbar" >
+			<ul id="menuList">
+			<li><a href="#home">Home</a></li>
+			<li><a href="menu.html">Menu</a></li>
+			<li><a href="#res">Reservations</a></li>
+			</ul>
+		</nav>
+		<div class="icons">
+				<img src="images/menu.png" id="menu" onclick="togglemenu()">
+			</div>
+	</header>
+
+	<script>
+    var menuList = document.getElementById("menuList");
+
+    menuList.style.maxHeight = "0px";
+
+    function togglemenu(){
+
+    if(menuList.style.maxHeight == "0px")
+    {
+        menuList.style.maxHeight = "600px";
+    }
+    else
+    {
+        menuList.style.maxHeight = "0px";
+    }
+    }
+    </script>
+</body>
+</html>
